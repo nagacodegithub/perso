@@ -202,19 +202,6 @@ p{
     margin-bottom:30px;
  
 }
-/* .hero-avatar::before{
-  content:'';
-  width:280px;
-  height:280x;
-  background:#95D9C6;
-  background-image: -webkit-repeating-radial-gradient(center center,#04b4e0,#04b4e0 1px,transparent 0px,transparent 100%);
-  position: absolute;
-  border-radius: 50%;
-  top:-25px;
-  right:0px;
-  z-index:-1;
-} */
-
 .hero-profile{
     width: 100%;
     height: 100%;
@@ -392,6 +379,9 @@ header{
 }
 .cv-btn i{
     font-size:24px;
+}
+.cv-btn:hover{
+    background: linear-gradient(101.38deg,#56CBAA 41.62%,#6fdabb 100%);
 }
 
 /*service section*/
@@ -730,9 +720,6 @@ header{
     color: var(--primary);
 }
 /*Contact section*/
-.contact input{
-
-}
 .contact-info-box{
     border:1px solid var(--light-gray);
     margin-bottom: 60px;
@@ -758,7 +745,12 @@ header{
   width: 200px;
   height: 60px;
   font-family:outfit;
+  cursor: pointer;
+  transition: background 2s linear;
 
+}
+.send-btn:hover{
+    background: linear-gradient(101.38deg,#56CBAA 41.62%,#6fdabb 100%);
 }
 
 /*Footer section*/
