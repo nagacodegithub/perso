@@ -246,6 +246,9 @@ p{
 .social-link li:not(:last-child){
  margin-right:10px;
 }
+.social-link li i a{
+    margin-right:15px;
+}
 .social-link li i{
     font-size:24px;
 }
