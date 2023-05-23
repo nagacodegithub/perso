@@ -1,36 +1,87 @@
+/*---------------------------------------------------------------
 
-//portfolio filter
+    Template Name: Bestbook - Ebook Landing HTML Template
+    Template URL: [demo url]
+    Description: This is a landing page for E-book made with bootstrap 5
+    Author: Digitshack
+    Author URL: https://themeforest.net/user/digitshack
+    Version: 1.0
 
-const filters=document.querySelectorAll('.portfolio-filters li');
-const portfolioItem=document.querySelectorAll('.port-item');
+-----------------------------------------------------------------
+
+    JS INDEX
+    ==================
+
+    1. Preloader
+    2. Type Words
+    3. Portfolio Filter
+    4. Testimonial Slider
+    5. Navigation Menus
+----------------------------------------------------------------*/
+
+
+$(document).ready(function(){
+
+/*================================= 
+* 1. Preloader
+==================================*/
+
+var preloader = $('.preloader');
+setTimeout(function(){
+    preloader.css('opacity','0');
+   setTimeout(function(){
+      preloader.hide();
+   },1000)
+},700)
+
+/*================================= 
+* 2. Type Words
+==================================*/
+   new Typed({
+      element:'#about-typeword',
+      typeSpeed:120,
+      backSpeed:60,
+      typeDelay:3000
+   });
+   new Typed({
+      element:'#profile-typeword',
+      typeSpeed:120,
+      backSpeed:60,
+      typeDelay:3000
+   });
+
+/*================================= 
+* 3. Portfolio Filter
+==================================*/
+const filters=$('.portfolio-filters li');
+const portfolioItem=$('.port-item');
 function portFilter(){
-filters.forEach((filter)=>{
-   
-    filter.addEventListener('click',(e)=>{
+filters.each((i,filter)=>{
+    $(filter).on('click',(e)=>{
          const activeFilter=e.target.textContent.trim();
-         filters.forEach((filter)=>{
-            filter.classList.remove('active');
+         filters.each((i,filter)=>{
+            $(filter).removeClass('active');
          });
          e.target.classList.add('active');
-         console.log(activeFilter)
          const defaultFilter='all';
-         portfolioItem.forEach((port)=>{
+         portfolioItem.each((i,port)=>{
             if(defaultFilter==activeFilter){
-                port.style.display='block';
+                $(port).show();
                 return;
             }
-            if(port.getAttribute('data-filter')!=activeFilter){
-                port.style.display='none';
+            if( $(port).attr('data-filter')!=activeFilter){
+               $(port).hide();
             }else{
-                port.style.display='block';
+               $(port).show();
             }
          });
     });
 });
 }
-portFilter()
-
-$(document).ready(function(){
+portFilter();
+/*================================= 
+* 4. Testimonial Slider
+==================================*/
    var owl = $(".owl-carousel");
    owl.owlCarousel({
      items: 2,
@@ -41,7 +92,6 @@ $(document).ready(function(){
      responsiveClass: true,
      responsiveClass: true,
      loop: true,
-    
      dots:true,
      stagePadding:5,
      responsive: {
@@ -64,18 +114,21 @@ $(document).ready(function(){
        }
      }
    });
+
+/*================================= 
+* 5. Navigation Menus
+==================================*/
    $('.main-menu li a').on('click',function(){
-      console.log($($(this).attr('href')).offset().top) ; 
+      $('.main-menu li a').removeClass('active')
+      $(this).addClass('active');
       $('html,body').animate({
-         scrollTop:$($(this).attr('href')).offset().top-0,
+         scrollTop:$($(this).attr('href')).offset().top,
       },600)         
    });
-
-   //mobile menus
    $('.menu-icon,.main-menu ul li').on('click',function(){
       $('#menu').toggleClass('open');
-      console.log('collapse new')
    });
+
 })
 
 

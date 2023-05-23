@@ -16,16 +16,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+        <!-- Preloader Starts -->
+
+        <!-- <div class="preloader">
+          <div class="circle">
+          </div>
+        </div> -->
+
+        <!-- Preloader Ends -->
+        
         <!-- Strating of the Sidebar Area-->
+
         <div class="sidebar w-100 d-flex flex-column align-items-center">
           <!-- Start Logo-->
           <div class="head-wrap">
-            <div class="logo-wrap ps-4"><a href="#" class="logo d-flex align-items-center">
+            <div class="logo-wrap ps-3"><a href="#" class="logo d-flex align-items-center">
               <img  src="img/logo.png" class="img-fluid"  alt="logo" ></a>
             </div> 
              <!-- End Logo area-->
-            <div class="right_side pe-4">
+            <div class="right_side pe-3 pt-1">
                 <button class="menu-icon font-26" type="button">
                     <i class="fa-solid fa-bars"></i>
                   </button>
@@ -33,37 +42,40 @@
           </div>
           <!-- End Logo -->
 
-          <!-- Start profile info-->
-          <div class="profile">
+          <!-- Start profile info -->
+          <div class="profile d-flex flex-column align-items-center">
             <div class="hero-avatar mt-5">
                   <div class="hero-profile">
-                    <img src="img/avatar-2.jpg" class="img-fluid"  alt="">
+                    <img src="img/avatar.jpg" class="img-fluid"  alt="about">
                   </div>
             </div>
             <div class="d-flex flex-column align-items-center mb-3">
                   <h2 class="font-36">Freddie Mack</h2>
-                  <h3 class="font-16 pb-2 light-cyan">Ui/Ux Designer</h3>
-                  <ul class="social-link">
-                      <a href="#" target="_blank"><li><i class="fa-brands fa-facebook-f"></i></li></a>
-                      <a href="#" target="_blank"><li><i class="fa-brands fa-twitter"></i></li></a>
-                      <a href="#" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
-                      <a href="#" target="_blank"><li><i class="fa-brands fa-dribbble"></i></li></a>
+                  <h3 class="font-16 pb-2 light-cyan"><span id="profile-typeword" data-words='["Ui/Ux Designer.","Web Developer."]'></span><span class="type-cursor">|</span></h3>
+                  <ul class="social-link mt-2 mb-2">
+                      <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
                   </ul>
               </div>
-              <button class="hire-btn text-uppercase"><i class="fa-regular fa-envelope"></i>Hire Me!</button>
+              <a href="#contact" class="hire-btn text-uppercase"><i class="fa-regular fa-envelope"></i>Hire Me!</a>
          </div>
-            <!-- End profile info-->
+            <!-- End profile info -->
         </div>
+
         <!-- End of the Sidebar Area-->
 
         <!-- Strating of the Main Area-->
+
         <div class="main-section" id="home">
           <!-- Strating of the Header Area-->
+
             <header class="w-100">
                <!-- Starting of the Menu -->
                 <nav class="main-menu" id="menu">
                     <ul class="text-capitalize p-3 d-flex justify-content-center align-items-center">
-                        <li><a href="#about"><i class="fa-solid fa-user-large"></i>about</a></li>
+                        <li><a href="#about" class="active"><i class="fa-solid fa-user-large"></i>about</a></li>
                         <li><a href="#services"><i class="fa-solid fa-bars-progress"></i>service</a></li>
                         <li><a href="#resume"><i class="fa-solid fa-graduation-cap"></i>resume</a></li>
                         <li><a href="#works"><i class="fa-solid fa-briefcase"></i>portfolio</a></li>
@@ -74,16 +86,18 @@
                 </nav>
                 <!-- End of the Menu -->
             </header>
+
           <!-- End of the Header Area -->
 
           <!-- Strating of the About Section Area -->
+
           <section class="about section-area" id="about">
               <div class="container">
                   <h1 class="headline">About <span class="head-color">Me</span></h1>  
                   <div class="mt-5 text-center text-lg-start">
-                    <h1 class="mb-3 font-48">I'm <span class="head-color">Freddie Mack</span>, a Ui/Ux Designer</h1>
-                    <p >I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <p>Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+                    <h1 class="mb-3 font-48 typewriter">I'M <span id="about-typeword" data-words='["Freddie Mack.","A Ui/Ux Designer.","A Web Developer."]' class="head-color"></span><span class="head-color type-cursor">|</span></h1>
+                    <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>At our brand-building company, we offer affordable solutions to help businesses establish a strong brand presence. With a dedicated team of experts, we have successfully assisted thousands of clients in achieving exceptional results. Our primary goal is to deliver high-quality work within the specified time and budget, while meeting all of our clients' requirements.</p>
                   </div>
                   <div class="personal_info  mt-5 row flex-wrap p-3">
                       <ul class="d-flex flex-wrap">
@@ -111,17 +125,18 @@
                       
                   </div>
                   <button class="cv-btn mt-5 ps-text-dark d-flex justify-content-center align-items-center"><i class="fa-sharp fa-solid fa-file-arrow-down me-3 ps-text-dark"></i>Download CV</button>
-              
               </div>
           </section>
+
           <!-- End of the About Section Area-->
 
           <!-- Starting of the Service Section Area-->
+
           <section class="service section-area" id="services">
           <div class="container">
                 <h1 class="headline">My <span class="head-color">Services</span></h1>  
                 <div class="mt-5 row flex-wrap  ">
-                  <!--- Service Items contains-->
+                  <!--- Service Items start-->
                   <div class="col-12 col-lg-6 col-xl-4">
                     <div class="border service-item">
                     <i class="fa-solid fa-pen-ruler"></i>
@@ -135,7 +150,6 @@
                       <h2 class="text-center font-24">Development</h2>
                       <p class="text-center">Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
                     </div>
-                    
                   </div>
                   <div class="col-12 col-lg-6 col-xl-4">
                     <div class="border service-item">
@@ -144,21 +158,24 @@
                     <p class="text-center">Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
                     </div>
                   </div>
-                  <!--- End Service Items contains -->
+                  <!--- End Service Items -->
                 </div>
           </div>
           </section>
+
           <!-- End of the Service Section Area -->
 
-          <!-- Starting of the Skills Section Area -->
-          <section class="service section-area" id="resume">
+          <!-- Starting of the Resume Section Area -->
+          <section class="resume section-area" id="resume">
             <div class="container">
                   <h1 class="headline">My <span class="head-color">Resume</span></h1> 
                   <div class="mt-5 row flex-wrap ">
+                    <!-- Education Start -->
                     <div class="col-12 col-lg-6">
                         <div class="education">
                           <h3>Education</h3>
-                          <div class="resume-items ">
+                          <!-- Education List Start -->
+                          <div class="resume-items">
                               <div class="resume-box mt-5">
                               <i class="fa-solid fa-graduation-cap resume-icon"></i>
                               <div class="resume-info">
@@ -176,11 +193,16 @@
                               </div>
                               </div>
                           </div>
+                          <!-- Education List End -->
                         </div>
                     </div>
+                    <!-- Education End  -->
+
+                    <!-- Experience Start -->
                     <div class="col-12 col-lg-6">
                       <div class="experience">
                         <h3>Experience</h3>
+                        <!-- Experience List Start -->
                         <div class="resume-items mt-5">
                           <div class="resume-box">
                             <i class="fa-solid fa-briefcase resume-icon"></i>
@@ -189,123 +211,122 @@
                               <h4 class="font-16 text-capitalize">graphics designer - envato</h4>
                               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
                             </div>
-                            </div>
-                            <div class="resume-box">
+                          </div>
+                          <div class="resume-box">
                             <i class="fa-solid fa-briefcase resume-icon"></i>
                             <div class="resume-info">
                               <span class="resume-year">2021-2023</span>
                               <h4 class="font-16 text-capitalize">web developer - facebook</h4>
                               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
                             </div>
-                            </div>
-                      </div>
+                          </div>
+                        </div>
+                        <!-- Experience List End -->
                       </div>
                     </div>
+                    <!-- Experience End -->
                   </div>
-                  
+                  <!-- Working Skills Start -->
                   <div class="mt-5 row flex-wrap ">
-                  <div class="mb-3">
-                    <h2 class="sub-headline">Working <span class="head-color">Skills</span></h2> 
-                  </div>
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="skill-item  d-flex ">
-                      <div class="me-2"><img src="./img/html.svg" width="60" alt="html"></div>
-                      <div class="skill-info w-100 ms-2">
+                    <div class="mb-3">
+                      <h2 class="sub-headline">Working <span class="head-color">Skills</span></h2>
+                    </div>
+                    <!-- Skills List Start -->
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="skill-item  d-flex ">
+                        <div class="me-2"><img src="./img/html.svg" width="60" alt="html"></div>
+                        <div class="skill-info w-100 ms-2">
                           <p class="p-0 m-0 skill-name mb-2">HTML/CSS<span class="level">95%</span></p>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                          </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-
-                    <div class="col-lg-6 col-xl-6">
-                      <div class="skill-item  d-flex ">
-                        <div class="me-2"> <img src="./img/webflow.svg" width="60" alt="webflow"></div>
-                        
-                        <div class="skill-info w-100 ms-2">
-                            <p class="p-0 m-0 skill-name mb-2">Web Flow<span class="level">95%</span></p>
-                            <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                             </div>
-                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="skill-item  d-flex ">
+                        <div class="me-2"> <img src="./img/webflow.svg" width="60" alt="webflow"></div>
+                        <div class="skill-info w-100 ms-2">
+                          <p class="p-0 m-0 skill-name mb-2">Web Flow<span class="level">95%</span></p>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="col-lg-6 col-xl-6">
                       <div class="skill-item  d-flex ">
                         <div class="me-2"> <img src="./img/react.svg" width="60" alt="react"></div>
                         <div class="skill-info w-100 ms-2">
-                            <p class="p-0 m-0 skill-name mb-2">React<span class="level">90%</span></p>
-                            <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <p class="p-0 m-0 skill-name mb-2">React<span class="level">90%</span></p>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                             </div>
-                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-
                     <div class="col-lg-6 col-xl-6">
                       <div class="skill-item  d-flex ">
                         <div class="me-2">  <img src="./img/angular.svg" width="60" alt="angular"></div>
                         <div class="skill-info w-100 ms-2">
-                            <p class="p-0 m-0 skill-name mb-2">Angular<span class="level">86%</span></p>
-                            <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <p class="p-0 m-0 skill-name mb-2">Angular<span class="level">86%</span></p>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                             </div>
-                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-
                     <div class="col-lg-6 col-xl-6">
                       <div class="skill-item  d-flex ">
                         <div class="me-2">  <img src="./img/figma.svg" width="60"  alt="figma"></div>
                         <div class="skill-info w-100 ms-2">
-                            <p class="p-0 m-0 skill-name mb-2">Figma<span class="level">96%</span></p>
-                            <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <p class="p-0 m-0 skill-name mb-2">Figma<span class="level">96%</span></p>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                             </div>
-                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-
                     <div class="col-lg-6 col-xl-6">
                       <div class="skill-item  d-flex ">
                         <div class="me-2">  <img src="./img/adobe-xd.svg" width="60"  alt="adobeXd"></div>
                         <div class="skill-info w-100 ms-2">
-                            <p class="p-0 m-0 skill-name mb-2">Adobe XD<span class="level">92%</span></p>
-                            <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <p class="p-0 m-0 skill-name mb-2">Adobe XD<span class="level">92%</span></p>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                             </div>
-                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  
-              </div>
+                    <!-- Skills List end -->
+                  </div>
+                  <!-- Working Skills End-->
             </div>
           </section>
-          <!-- End of the Skills Section Area -->
+          <!-- End of the Resume Section Area -->
 
           <!-- Starting of the Portfolio Section Area -->
+
           <section class="portfolio section-area" id="works">
                 <div class="container">
                 <h1 class="headline">My <span class="head-color">Works</span></h1> 
                     <div class="d-flex justify-content-center text-center mt-5 mb-5">
                         <ul class="portfolio-filters">
-                          <li class="active me-2">all</li>
-                          <li class="me-2">design</li>
-                          <li class="me-2">development</li>
-                          <li class="">photos</li>
+                          <li class="active">all</li>
+                          <li>design</li>
+                          <li>development</li>
+                          <li>photos</li>
                         </ul>
                     </div>
-
-                    <div class="portfolio-wrap row" id="masonry-grid">
-                      <div  data-filter='photos' class="port-item col-sm-6 col-lg-4">
+                    <div class="portfolio-wrap row">
+                      <!--Project Item-->
+                      <div  data-filter='design' class="port-item col-sm-6 col-lg-4">
                         <div class="port-content">
                           <img id="check" src="img/project-1.jpg" alt="Trees divt by green divght during dusk" loading="lazy">
                           <div class="portfolio-desc">
@@ -317,15 +338,16 @@
                         <div class="modal" id="project1">
                           <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                              <!-- Modal content goes here -->
                               <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                  <i class="fa-regular fa-circle-xmark"></i>
+                                </button>
                               </div>
                               <div class="modal-body justify-content-center">
                                 <div class="container p-lg-5">
                                   <h2 class="text-center mb-5 head-color">Portfolio Project 1</h2>
-                                  <div class="col-12">
-                                    <img class="img-fluid rounded" src="img/project-1.jpg" alt="project">
+                                  <div class="col-12 text-center">
+                                    <img class="img-fluid rounded" src="img/project-view-1.jpg" alt="project">
                                   </div>
                                   <div class="project-info row">
                                     <div class="col-12 col-lg-8 mt-5">
@@ -335,19 +357,19 @@
                                       <div class="col-12 col-lg-4 mt-5">
                                         <ul class="project-details">
                                         <li>
-                                          <p class="ps-text-dark"><span  class="fw-bold">Project : </span> Website</p>
+                                          <p class="ps-text-dark"><span  class="fw-bold"><i class="fa-solid fa-diagram-project me-2 text-success"></i>Project : </span> Website</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Created at :</span> March 12,2022</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-calendar-days me-2 text-success"></i>Created at :</span> March 12,2022</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Client :</span> Alex David</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-user-tie me-2 text-success"></i>Client :</span> Alex David</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-eye me-2 text-success"></i>Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Technologies :</span></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-microchip me-2 text-success"></i>Technologies :</span></p>
                                             <ul>
                                             <li class="tag">HTML5</li>
                                             <li class="tag">CSS3</li>
@@ -365,6 +387,7 @@
                         </div>   
                         <!-- End View More Projects Modal-->                       
                       </div>
+                      <!--Project Item-->
                       <div data-filter='photos' class="port-item col-sm-6 col-lg-4">
                         <div class="port-content">
                         <img src="img/project-2.jpg" alt="A Toyota Previa covered in graffiti" loading="lazy">
@@ -373,20 +396,20 @@
                           <span class="view-btn" data-bs-toggle="modal" data-bs-target="#project2">View More</span>
                         </div>
                         </div>
-
                         <!--View More Projects Modal-->
                         <div class="modal" id="project2">
                           <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                              <!-- Modal content goes here -->
                               <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                  <i class="fa-regular fa-circle-xmark"></i>
+                                </button>
                               </div>
                               <div class="modal-body justify-content-center">
                                 <div class="container p-lg-5">
                                   <h2 class="text-center mb-5 head-color">Portfolio Project 2</h2>
-                                  <div class="col-12">
-                                    <img class="img-fluid rounded" src="img/project-2.jpg" alt="project">
+                                  <div class="col-12 text-center">
+                                    <img class="img-fluid rounded" src="img/project-view-2.jpg" alt="project">
                                   </div>
                                   <div class="project-info row">
                                     <div class="col-12 col-lg-8 mt-5">
@@ -395,19 +418,19 @@
                                       <div class="col-12 col-lg-4 mt-5">
                                         <ul class="project-details">
                                         <li>
-                                          <p class="ps-text-dark"><span  class="fw-bold">Project : </span> Website Design</p>
+                                          <p class="ps-text-dark"><span  class="fw-bold"><i class="fa-solid fa-diagram-project me-2 text-success"></i>Project : </span> Website Design</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Created at :</span> June 26,2022</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-calendar-days me-2 text-success"></i>Created at :</span> June 26,2022</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Client :</span> Alex David</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-user-tie me-2 text-success"></i>Client :</span> Alex David</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-eye me-2 text-success"></i>Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Technologies :</span></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-microchip me-2 text-success"></i>Technologies :</span></p>
                                           <ul>
                                             <li class="tag">Photoshop</li>
                                             <li class="tag">Figma</li>
@@ -416,18 +439,15 @@
                                         </ul>
                                       </div>
                                   </div>
-                                  
                                 </div>
-                              
-                                
                               </div>
-                          
                             </div>
                           </div>
                         </div>   
                         <!-- End View More Projects Modal-->   
                       </div>
-                      <div  data-filter='design' class="port-item col-sm-6 col-lg-4">
+                      <!--Project Item-->
+                      <div  data-filter='photos' class="port-item col-sm-6 col-lg-4">
                         <div class="port-content">
                           <img src="img/project-3.jpg" alt="Interesting divving room divght through a window" loading="lazy">
                           <div class="portfolio-desc">
@@ -435,21 +455,20 @@
                           <span class="view-btn" data-bs-toggle="modal" data-bs-target="#project3">View More</span>
                         </div>
                         </div>
-                        
                         <!--View More Projects Modal-->
                         <div class="modal" id="project3">
                           <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                              <!-- Modal content goes here -->
                               <div class="modal-header">
-                                
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                  <i class="fa-regular fa-circle-xmark"></i>
+                                </button>
                               </div>
                               <div class="modal-body justify-content-center">
                                 <div class="container p-lg-5">
                                   <h2 class="text-center mb-5 head-color">Portfolio Project 3</h2>
-                                  <div class="col-12">
-                                    <img class="img-fluid rounded" src="img/project-3.jpg" alt="project">
+                                  <div class="col-12 text-center">
+                                    <img class="img-fluid rounded" src="img/project-view-3.jpg" alt="project">
                                   </div>
                                   <div class="project-info row">
                                     <div class="col-12 col-lg-8 mt-5">
@@ -458,19 +477,19 @@
                                       <div class="col-12 col-lg-4 mt-5">
                                         <ul class="project-details">
                                         <li>
-                                          <p class="ps-text-dark"><span  class="fw-bold">Project : </span> Website</p>
+                                          <p class="ps-text-dark"><span  class="fw-bold"><i class="fa-solid fa-diagram-project me-2 text-success"></i>Project : </span> Website</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Created at :</span> March 12,2022</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-calendar-days me-2 text-success"></i>Created at :</span> March 12,2022</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Client :</span> Alex David</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-user-tie me-2 text-success"></i>Client :</span> Alex David</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-eye me-2 text-success"></i>Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Technologies :</span> </p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-microchip me-2 text-success"></i>Technologies :</span> </p>
                                             <ul>
                                             <li class="tag">HTML5</li>
                                             <li class="tag">CSS3</li>
@@ -481,17 +500,14 @@
                                         </ul>
                                       </div>
                                   </div>
-                                  
                                 </div>
-                              
-                                
                               </div>
-                          
                             </div>
                           </div>
                         </div>   
                         <!-- End View More Projects Modal-->   
                       </div>
+                      <!--Project Item-->
                       <div  data-filter='design' class="port-item col-sm-6 col-lg-4">
                         <div class="port-content">
                           <img src="img/project-4.jpg" alt="Sara on a red bike" loading="lazy">
@@ -504,16 +520,16 @@
                         <div class="modal" id="project4">
                         <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
                           <div class="modal-content">
-                            <!-- Modal content goes here -->
                             <div class="modal-header">
-                              
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                              </button>
                             </div>
                             <div class="modal-body justify-content-center">
                               <div class="container p-lg-5">
                                 <h2 class="text-center mb-5 head-color">Portfolio Project 4</h2>
-                                <div class="col-12">
-                                  <img class="img-fluid rounded" src="img/project-4.jpg" alt="project" >
+                                <div class="col-12 text-center">
+                                  <img class="img-fluid rounded" src="img/project-view-4.jpg" alt="project" >
                                 </div>
                                 <div class="project-info row">
                                   <div class="col-12 col-lg-8 mt-5">
@@ -522,19 +538,19 @@
                                     <div class="col-12 col-lg-4 mt-5">
                                       <ul class="project-details">
                                       <li>
-                                        <p class="ps-text-dark"><span  class="fw-bold">Project : </span> Website</p>
+                                        <p class="ps-text-dark"><span  class="fw-bold"><i class="fa-solid fa-diagram-project me-2 text-success"></i>Project : </span> Website</p>
                                       </li>
                                       <li>
-                                        <p class="ps-text-dark"><span class="fw-bold">Created at :</span> March 12,2022</p>
+                                        <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-calendar-days me-2 text-success"></i>Created at :</span> March 12,2022</p>
                                       </li>
                                       <li>
-                                        <p class="ps-text-dark"><span class="fw-bold">Client :</span> Alex David</p>
+                                        <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-user-tie me-2 text-success"></i>Client :</span> Alex David</p>
                                       </li>
                                       <li>
-                                        <p class="ps-text-dark"><span class="fw-bold">Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
+                                        <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-eye me-2 text-success"></i>Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
                                       </li>
                                       <li>
-                                        <p class="ps-text-dark"><span class="fw-bold">Technologies :</span></p>
+                                        <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-microchip me-2 text-success"></i>Technologies :</span></p>
                                         <ul>
                                           <li class="tag">HTML5</li>
                                           <li class="tag">CSS3</li>
@@ -545,18 +561,14 @@
                                       </ul>
                                     </div>
                                 </div>
-                                
                               </div>
-                            
-                              
                             </div>
-                        
                           </div>
                         </div>
                       </div>   
                       <!-- End View More Projects Modal-->   
                       </div>
-
+                      <!--Project Item-->
                       <div data-filter='development' class="port-item col-sm-6 col-lg-4">
                         <div class="port-content">
                           <img src="img/project-5.jpg" alt="XOXO venue in between talks" loading="lazy">
@@ -569,16 +581,16 @@
                         <div class="modal" id="project5">
                           <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                              <!-- Modal content goes here -->
                               <div class="modal-header">
-                                
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                  <i class="fa-regular fa-circle-xmark"></i>
+                                </button>
                               </div>
                               <div class="modal-body justify-content-center">
                                 <div class="container p-lg-5">
                                   <h2 class="text-center mb-5 head-color">Portfolio Project 5</h2>
-                                  <div class="col-12">
-                                    <img class="img-fluid rounded" src="img/project-5.jpg" alt="project">
+                                  <div class="col-12 text-center">
+                                    <img class="img-fluid rounded" src="img/project-view-5.jpg" alt="project">
                                   </div>
                                   <div class="project-info row">
                                     <div class="col-12 col-lg-8 mt-5">
@@ -587,19 +599,19 @@
                                       <div class="col-12 col-lg-4 mt-5">
                                         <ul class="project-details">
                                         <li>
-                                          <p class="ps-text-dark"><span  class="fw-bold">Project : </span> Website</p>
+                                          <p class="ps-text-dark"><span  class="fw-bold"><i class="fa-solid fa-diagram-project me-2 text-success"></i>Project : </span> Website</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Created at :</span> March 12,2022</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-calendar-days me-2 text-success"></i>Created at :</span> March 12,2022</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Client :</span> Alex David</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-user-tie me-2 text-success"></i>Client :</span> Alex David</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-eye me-2 text-success"></i>Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Technologies :</span> </p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-microchip me-2 text-success"></i>Technologies :</span> </p>
                                           <ul>
                                             <li class="tag">HTML5</li>
                                             <li class="tag">CSS3</li>
@@ -610,17 +622,14 @@
                                         </ul>
                                       </div>
                                   </div>
-                                  
                                 </div>
-                              
-                                
                               </div>
-                          
                             </div>
                           </div>
                         </div>   
                         <!-- End View More Projects Modal-->   
                       </div>
+                      <!--Project Item-->
                       <div  data-filter='development' class="port-item col-sm-6 col-lg-4">
                         <div class="port-content">  
                           <img src="img/project-6.jpg" alt="Trees divt by green divght during dusk" >
@@ -633,18 +642,16 @@
                         <div class="modal" id="project6">
                           <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                              <!-- Modal content goes here -->
                               <div class="modal-header">
-                                
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                    
+                                  <i class="fa-regular fa-circle-xmark"></i>
                                 </button>
                               </div>
                               <div class="modal-body justify-content-center">
                                 <div class="container p-lg-5">
                                   <h2 class="text-center mb-5 head-color">Portfolio Project 6</h2>
-                                  <div class="col-12">
-                                    <img class="img-fluid rounded" src="img/project-6.jpg" alt="project">
+                                  <div class="col-12 text-center">
+                                    <img class="img-fluid rounded" src="img/project-view-6.jpg" alt="project">
                                   </div>
                                   <div class="project-info row">
                                     <div class="col-12 col-lg-8 mt-5">
@@ -653,19 +660,19 @@
                                       <div class="col-12 col-lg-4 mt-5">
                                         <ul class="project-details">
                                         <li>
-                                          <p class="ps-text-dark"><span  class="fw-bold">Project : </span> Website</p>
+                                          <p class="ps-text-dark"><span  class="fw-bold"><i class="fa-solid fa-diagram-project me-2 text-success"></i>Project : </span> Website</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Created at :</span> March 12,2022</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-calendar-days me-2 text-success"></i>Created at :</span> March 12,2022</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Client :</span> Alex David</p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-user-tie me-2 text-success"></i>Client :</span> Alex David</p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-eye me-2 text-success"></i>Preview :</span> <a href="#" class="text-primary">www.webwork.com</a></p>
                                         </li>
                                         <li>
-                                          <p class="ps-text-dark"><span class="fw-bold">Technologies :</span></p>
+                                          <p class="ps-text-dark"><span class="fw-bold"><i class="fa-solid fa-microchip me-2 text-success"></i>Technologies :</span></p>
                                           <ul>
                                             <li class="tag">HTML5</li>
                                             <li class="tag">CSS3</li>
@@ -676,37 +683,37 @@
                                         </ul>
                                       </div>
                                   </div>
-                                  
                                 </div>
-                              
-                                
                               </div>
-                          
                             </div>
                           </div>
                         </div>   
                         <!-- End View More Projects Modal-->   
                       </div>
-                      
                     </div>
                 </div>  
           </section>
+
           <!-- End of the Portfolio Section Area-->
 
           <!-- Starting of the Blog Section Area -->
+
           <section class="blog section-area" id="blog">
             <div class="container">
              <h1 class="headline mb-5">My <span class="head-color">Blogs</span></h1> 
               <div class="row mt-5">
+                 <!-- Blog Posts Start -->
                  <div class="col-12 col-sm-6 col-lg-4 mb-5">
                   <a href="#">
                     <div class="blog-post">
                      <div class="blog-post-img">
-                        <img  src="img/project-1.jpg" alt="blog" >
+                        <img  src="img/blog-1.jpg" alt="blog" >
                      </div>
                      <div class="blog-info">
-                      <h4>Why I Switched to Sketch For UI Design</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="mb-2"><i class="fa-solid fa-calendar-days me-2"></i>May 26,2023</span>
+                      <h4>Sketch Revolutionizing UI Design Workflow</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="blog-more text-capitalize">read more</span>
                      </div>
                      </div>
                   </a>
@@ -715,11 +722,13 @@
                   <a href="#">
                     <div class="blog-post">
                      <div class="blog-post-img">
-                        <img  src="img/project-10.jpg" alt="blog" >
+                        <img  src="img/blog-2.jpg" alt="blog" >
                      </div>
                      <div class="blog-info">
-                      <h4>6 Easy Steps to Better Icon Design</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="mb-2"><i class="fa-solid fa-calendar-days me-2"></i>May 22,2023</span>
+                      <h4>Mastering Icon UI Design Workflow</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="blog-more text-capitalize">read more</span>
                      </div>
                     </div>
                   </a>
@@ -728,11 +737,13 @@
                   <a href="#">
                     <div class="blog-post">
                      <div class="blog-post-img">
-                        <img  src="img/project-1.jpg" alt="blog" >
+                        <img  src="img/blog-3.jpg" alt="blog" >
                      </div>
                      <div class="blog-info">
-                      <h4>Why I Switched to Sketch For UI Design</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="mb-2"><i class="fa-solid fa-calendar-days me-2"></i>May 19,2023</span>
+                      <h4>Sketch Revolutionizing UI Design Workflow</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="blog-more text-capitalize">read more</span>
                      </div>
                      </div>
                   </a>
@@ -741,11 +752,13 @@
                   <a href="#">
                     <div class="blog-post">
                      <div class="blog-post-img">
-                        <img  src="img/project-10.jpg" alt="blog" >
+                        <img  src="img/blog-4.jpg" alt="blog" >
                      </div>
                      <div class="blog-info">
-                      <h4>6 Easy Steps to Better Icon Design</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="mb-2"><i class="fa-solid fa-calendar-days me-2"></i>May 16,2023</span>
+                      <h4>Mastering Icon UI Design Workflow</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="blog-more text-capitalize">read more</span>
                      </div>
                     </div>
                   </a>
@@ -754,11 +767,13 @@
                   <a href="#">
                     <div class="blog-post">
                      <div class="blog-post-img">
-                        <img  src="img/project-1.jpg" alt="blog" >
+                        <img  src="img/blog-5.jpg" alt="blog" >
                      </div>
                      <div class="blog-info">
-                      <h4>Why I Switched to Sketch For UI Design</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="mb-2"><i class="fa-solid fa-calendar-days me-2"></i>Feb 24,2023</span>
+                      <h4>Sketch Revolutionizing UI Design Workflow</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="blog-more text-capitalize">read more</span>
                      </div>
                      </div>
                   </a>
@@ -767,34 +782,41 @@
                   <a href="#">
                     <div class="blog-post">
                      <div class="blog-post-img">
-                        <img  src="img/project-10.jpg" alt="blog" >
+                        <img  src="img/blog-6.jpg" alt="blog" >
                      </div>
                      <div class="blog-info">
-                      <h4>6 Easy Steps to Better Icon Design</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="mb-2"><i class="fa-solid fa-calendar-days me-2"></i>Feb 20,2023</span>
+                      <h4>Mastering Icon UI Design Workflow</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <span class="blog-more text-capitalize">read more</span>
                      </div>
                     </div>
                   </a>
                  </div>
+                 <!-- Blog Posts End -->
               </div>
              </div>
           </section>
+
           <!-- End of the Blog Section Area -->
 
           <!-- Starting of the Testimonial Section Area -->
+
           <section class="testimonial section-area" id="testimonial">
           <div class="container">
             <h1 class="headline mb-5">Client<span class="head-color"> Speak</span></h1> 
               <div class="owl-carousel">
+                  <!-- Testimonial Slide -->
                   <div class="item">
                     <div class="testimonial-item">
                       <div class="testimonial-review d-flex flex-column align-items-center">
                         <div class="mb-4 testimonial-profile d-flex flex-column justify-content-center align-items-center">
                           <div class="testimonial-avatar ">
-                            <img class="img-fluid text-center" src="img/avatar-6.jpg" alt="review">
+                            <div class="avatar-border">
+                              <img class="img-fluid text-center" src="img/client-1.jpg" alt="review">
+                            </div>
                           </div>
                         </div> 
-                        
                           <h3 class="text-capitalize text-center mt-2 mb-0 pb-0">John Smith</h3>
                           <p class="mt-0 text-uppercase">ceo</p>
                           <p class="text-center font-24 review-content">“ Mauris auctor ipsum id quam varius, vitae dapibus nisl efficitur. Fusce elementum dolor ac velit lacinia, a efficitur odio consectetur.”</p>
@@ -808,12 +830,15 @@
                       </div>
                   </div>
                   </div>
+                  <!-- Testimonial Slide -->
                   <div class="item">
                     <div class="testimonial-item">
                       <div class="testimonial-review d-flex flex-column align-items-center">
                         <div class="mb-4 testimonial-profile d-flex flex-column justify-content-center align-items-center">
-                          <div class="testimonial-avatar ">
-                            <img class="img-fluid text-center" src="img/avatar-2.jpg" alt="review">
+                          <div class="testimonial-avatar">
+                            <div class="avatar-border">
+                              <img class="img-fluid text-center" src="img/client-2.jpg" alt="review">
+                            </div>
                           </div>
                         </div> 
                           <h3 class="text-capitalize text-center mt-2 mb-0 pb-0">alex david</h3>
@@ -829,15 +854,17 @@
                       </div>
                   </div>
                   </div>
+                  <!-- Testimonial Slide -->
                   <div class="item">
                     <div class="testimonial-item">
                       <div class="testimonial-review d-flex flex-column align-items-center">
                         <div class="mb-4 testimonial-profile d-flex flex-column justify-content-center align-items-center">
                           <div class="testimonial-avatar ">
-                            <img class="img-fluid text-center" src="img/avatar-4.jpg" alt="review">
+                            <div class="avatar-border">
+                              <img class="img-fluid text-center" src="img/client-3.jpg" alt="review">
+                            </div>
                           </div>
-                        </div> 
-                        
+                       </div> 
                           <h3 class="text-capitalize text-center mt-2 mb-0 pb-0">Sam Rex</h3>
                           <p class="mt-0 text-uppercase">ceo</p>
                           <p class="text-center font-24 review-content">“ Mauris auctor ipsum id quam varius, vitae dapibus nisl efficitur. Fusce elementum dolor ac velit lacinia, a efficitur odio consectetur.”</p>
@@ -848,16 +875,18 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                           </span>
-                          
                       </div>
                   </div>
                   </div>
+                  <!-- Testimonial Slide -->
                   <div class="item">
                     <div class="testimonial-item">
                       <div class="testimonial-review d-flex flex-column align-items-center">
                         <div class="mb-4 testimonial-profile d-flex flex-column justify-content-center align-items-center">
                           <div class="testimonial-avatar ">
-                            <img class="img-fluid text-center" src="img/avatar-5.jpg" alt="review">
+                            <div class="avatar-border">
+                              <img class="img-fluid text-center" src="img/client-4.jpg" alt="review">
+                            </div>
                           </div>
                         </div> 
                         
@@ -871,21 +900,23 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                           </span>
-                          
                       </div>
                   </div>
                   </div>
               </div>
           </div>
           </section>
+
           <!-- End of the Testimonial Section-->
 
           <!-- Contact of the Section Area-->
+
           <section class="contact section-area" id="contact">
             <div class="container">
                 <h1 class="headline mb-5">Contact<span class="head-color"> Me</span></h1> 
                 <div class="row mt-5">
-                    <div class="col-md-4 text-center font-24">
+                     <!-- contact info-->
+                     <div class="col-md-6 col-lg-4 text-center font-24">
                       <div class="contact-info-box pt-3">
                         <i class="fa-solid fa-location-dot"></i>
                         <div>
@@ -894,7 +925,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 text-center font-24">
+                    <!-- contact info-->
+                    <div class="col-md-6 col-lg-4 text-center font-24">
                       <div class="contact-info-box pt-3 ">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <div>
@@ -903,7 +935,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 text-center font-24">
+                    <!-- contact info-->
+                    <div class="col-md-6 col-lg-4 text-center font-24">
                       <div class="contact-info-box pt-3 ">
                         <i class="fa-solid fa-envelope-circle-check"></i>
                         <div>
@@ -911,47 +944,55 @@
                         <p>mackfreddie@perso.com</p>
                       </div>
                     </div>
-                    </div>
-                    <form class="d-flex flex-wrap">
-                    <div class="col-12 col-md-6 mb-5 pe-md-2">
-                        <input type="text" class="form-control p-3" placeholder="Your Name *">
-                    </div>
-                    <div class="col-12 col-md-6 mb-5">
-                        <input type="text" class="form-control p-3" placeholder="Your Email *">
-                    </div>
-                    <div class="col-12 mb-5">
-                        <input type="text" class="form-control p-3" placeholder="Your Subject *">
-                    </div>
-                    <div class="col-12 mb-5">
-                        <textarea class="form-control" rows="6" placeholder="Your Message *"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <div>
-                          <button class="btn send-btn" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</button>
-                        </div>
-                    </div>
-                  </form>
+                  </div>
+                  <form class="d-flex flex-wrap">
+                  <div class="col-12 col-md-6 mb-5 pe-md-2">
+                      <input type="text" class="form-control p-3" placeholder="Your Name *">
+                  </div>
+                  <div class="col-12 col-md-6 mb-5">
+                      <input type="text" class="form-control p-3" placeholder="Your Email *">
+                  </div>
+                  <div class="col-12 mb-5">
+                      <input type="text" class="form-control p-3" placeholder="Your Subject *">
+                  </div>
+                  <div class="col-12 mb-5">
+                      <textarea class="form-control" rows="6" placeholder="Your Message *"></textarea>
+                  </div>
+                  <div class="col-12">
+                      <div>
+                        <button class="btn send-btn" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</button>
+                      </div>
+                  </div>
+                </form>
                 </div>
             </div>
           </section>
+
           <!-- End of the Contact Section Area-->
 
           <!-- Starting of the Footer-->
+
           <footer class="footer  section-area pt-0 pb-0">
             <div class="container d-flex justify-content-center p-3">
                 <div class="d-flex w-100 justify-content-center align-items-center">
+                  <!-- Copyright Text Here -->
                   <p class="text-white m-0">© 2023 All Rights Reserved by njmakify.</p>
                 </div>
             </div>
           </footer>
+
           <!-- End of the Footer-->
+
         </div>
+
         <!-- End of the Main Area-->
 
         <!-- Jquery JS -->
         <script src="js/jquery.min.js"></script>
         <!-- Bootstrap 5 JS -->
         <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Text Typed JS -->
+        <script src="js/typed.js"></script>
         <!-- Owl Carousel Plugin JS -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- Custom Theme JS -->
